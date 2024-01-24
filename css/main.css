@@ -1,0 +1,133 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1450px;
+    margin: 0 auto;
+    gap: 64px;
+    margin-top: 64px;
+}
+
+main img {
+    border-radius: 3px;
+    width: 100%;
+    display: block;
+}
+.container-main {
+    display: grid;
+    background-color: #333333d9;
+    border-radius: 3px;
+    align-content: stretch;
+}
+
+.container-main h1 {
+    text-align: right;
+    color: #fff;
+    font-size: 56px;
+    padding: 12px;
+    align-self: center;
+}
+.container-main p {
+    padding: 12px;
+    font-size: 20px;
+    color: #fff;
+    align-self: center;
+}
+.links-main {
+    justify-self: end;
+    align-self: center;
+    margin-right: 12px;
+}
+.links-main a {
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 8px;
+}
+
+.link1-main {
+    background-color: #e95d35;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.link1-main:hover {
+    background-color: #ffc55c;
+    color: #e95d35;
+}
+
+.link2-main {
+    background-color: transparent;
+    color: #e95d35;
+    border: 2px solid transparent;
+}
+.link2-main:hover {
+    border: 2px solid #ffc55c;
+}
+
+@media (max-width: 1450px) {
+    main {
+        padding: 18px;
+    }
+
+    .container-main p {
+        align-self: start;
+    }
+
+    .links-main a {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 1300px) {
+    main {
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .container-main h1 {
+        font-size: 46px;
+    }
+
+    .container-main p {
+        font-size: 18px;
+    }
+    .links-main a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .container-main h1 {
+        text-align: left;
+
+        font-size: 36px;
+        padding: 12px;
+        align-self: center;
+    }
+    .container-main p {
+        padding: 12px;
+        font-size: 20px;
+        color: #fff;
+        align-self: center;
+    }
+    .links-main {
+        justify-self: end;
+        align-self: center;
+        margin-right: 12px;
+    }
+    .links-main a {
+        font-size: 16px;
+        padding: 8px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        margin: 0 8px;
+    }
+}

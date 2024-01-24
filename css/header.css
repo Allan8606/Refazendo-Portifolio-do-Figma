@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1450px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 25px;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+}
+li {
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+li:hover {
+    background-color: #e95d35;
+    border-radius: 4px;
+}
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    ul {
+        justify-content: center;
+    }
+}
